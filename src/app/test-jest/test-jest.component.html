@@ -1,0 +1,21 @@
+<div class="main-wrapper">
+    <div class="form">
+      <p>Name</p>
+      <input #name type="text" />
+  
+      <p>email id</p>
+      <input #email type="text" />
+  
+      <p>password</p>
+      <input #password type="text" />
+  
+      <p>Address</p>
+      <input #address type="text" />
+  
+      <input
+        type="button"
+        value="submit"
+        (click)="submit(name.value, email.value, password.value, address.value)"
+      />
+    </div>
+  </div>
